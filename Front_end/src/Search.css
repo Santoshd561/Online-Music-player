@@ -1,0 +1,13 @@
+.transparent-input {
+	background-color: rgba(255, 254, 254, 0.781);
+	border: 0;
+	color: rgba(7, 2, 2, 0.5);
+	padding: 10px 50px;
+	font-size: 20px;
+	margin-left:-150px;
+	border-radius: 50px;
+	outline: auto;
+	width: 120%;
+	margin-top: 80px;
+	/* margin-top: 20px; */
+}
