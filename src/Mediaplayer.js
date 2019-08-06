@@ -9,12 +9,6 @@ import Volume from './Volume'
 import './songslist.css';
 import './App1.css';
 
-
-
-
-
-
-
 export default class MediaPlayer extends Component {
 
   constructor(props) {
@@ -41,7 +35,7 @@ export default class MediaPlayer extends Component {
       <Media>
         <div>
           <div className="media-wrapper" style={{ marginLeft: 1050, marginTop:-580 }}>
-            {this.state.songs_list.map((s) => (
+            {this.state.songs_list.map((e) => (
               <ul>
                 <button className="semi-transparent-button" style={{marginLeft:"-50px",marginTop:"-20px"}}
                   onClick={() => {
@@ -49,7 +43,7 @@ export default class MediaPlayer extends Component {
                       song: "http://localhost:5000/get_song?song_name=" + s.name
                     })
                   }}>
-                  {s.name}
+                  {e.name}
                 </button>
               </ul>
             ))}
